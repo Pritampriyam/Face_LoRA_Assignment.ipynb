@@ -1,5 +1,7 @@
 from diffusers import StableDiffusionPipeline
 import torch
+import os
+os.makedirs("output", exist_ok=True)  # Add this at start
 
 def generate():
     # 1. Load model
