@@ -2,6 +2,8 @@ import torch
 from diffusers import StableDiffusionPipeline, UNet2DConditionModel
 from peft import LoraConfig, get_peft_model
 import os
+from utils.helpers import create_folders
+create_folders()  # Add this before training
 
 def train():
     # 1. Setup
